@@ -22,6 +22,9 @@ namespace Task1
                 n = uint.Parse(args[1]);
                 s = uint.Parse(args[2]);
             }
+            decimal numberOfMultiplications = (decimal)m * n * s;
+            decimal numberOfAdditions = (decimal)m * s * (n - 1);
+            decimal numberOfOperations = numberOfAdditions+numberOfMultiplications;
 
             Console.WriteLine("Умножение матрицы {0}x{1} на {1}x{2}",m,n,s);
             decimal numberOfMultiplications = (decimal)m * n * s;
