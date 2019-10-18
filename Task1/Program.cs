@@ -26,13 +26,6 @@ namespace Task1
             decimal numberOfAdditions = (decimal)m * s * (n - 1);
             decimal numberOfOperations = numberOfAdditions+numberOfMultiplications;
 
-            Console.WriteLine("Умножение матрицы {0}x{1} на {1}x{2}",m,n,s);
-            decimal numberOfMultiplications = (decimal)m * n * s;
-            decimal numberOfAdditions = (decimal)m * s * (n - 1);
-            decimal numberOfOperations = numberOfAdditions+numberOfMultiplications;
-
-           
-
             a = new double[m, n];
             Fill(a);
             b = new double[n, s];
