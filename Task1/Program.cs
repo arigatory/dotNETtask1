@@ -16,16 +16,15 @@ namespace Task1
             uint m = 999;
             uint n = 777; 
             uint s = 1111;
-            decimal numberOfMultiplications = (decimal)m * n * s;
-            decimal numberOfAdditions = (decimal)m * s * (n - 1);
-            decimal numberOfOperations = numberOfAdditions+numberOfMultiplications;
-
             if (args.Count() == 3)
             {
                 m = uint.Parse(args[0]);
                 n = uint.Parse(args[1]);
                 s = uint.Parse(args[2]);
             }
+            decimal numberOfMultiplications = (decimal)m * n * s;
+            decimal numberOfAdditions = (decimal)m * s * (n - 1);
+            decimal numberOfOperations = numberOfAdditions+numberOfMultiplications;
 
             a = new double[m, n];
             Fill(a);
